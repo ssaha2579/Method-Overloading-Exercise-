@@ -2,6 +2,15 @@
 {
     public class Program
     {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Add(numOne: 0, numTwo: 0, true)); //line19 to line 38  
+
+            Console.WriteLine(Add("1", "2")); //line39 to line 43 - due to string
+
+            Console.WriteLine(Add(1, 2)); //lines 14 to 18 
+        }
+
         public  static int Add(int numOne, int numTwo)
         { 
             return numOne + numTwo;
@@ -32,9 +41,6 @@
             return numOne + numTwo;
         } 
 
-        static void Main(string[] args)
-        {
-            Console.WriteLine(Add(numOne: 0, numTwo: 0, true));
-        }
+       
     }
 }
